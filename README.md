@@ -61,9 +61,18 @@ The evaluation sheet tracks each response with the following fields:
 1. Project Overview
 2. Evaluation Rubric
 3. Prompt Dataset
-4. Evaluation Sheet
+4. LLM Evaluation Framework
 5. Results
 6. Conclusion
+
+## Workbook Structure
+
+The main evaluation file is [datasets/LLM_Evaluation_Framework.xlsx](datasets/LLM_Evaluation_Framework.xlsx) and it is organized into four tabs:
+
+- ChatGPT Evaluation
+- Gemini Evaluation
+- Comparison
+- Statistics
 
 ## Evaluation Metrics
 
@@ -114,7 +123,7 @@ The cleaned evaluation sheet now shows a strong baseline across the benchmark, w
 
 ### Model Comparison
 
-The repository also includes a side-by-side benchmark scaffold for ChatGPT vs Gemini at [datasets/chatgpt_vs_gemini.xlsx](datasets/chatgpt_vs_gemini.xlsx), which helps show how model comparisons can be documented in the same project.
+The side-by-side comparison is now built directly into [datasets/LLM_Evaluation_Framework.xlsx](datasets/LLM_Evaluation_Framework.xlsx) using the Comparison tab, so the workflow stays in one workbook.
 
 ## Conclusion
 
