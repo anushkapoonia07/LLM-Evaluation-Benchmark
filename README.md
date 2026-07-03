@@ -48,6 +48,7 @@ The evaluation sheet tracks each response with the following fields:
 - Translation
 - Summarization
 - OCR
+- Image Understanding
 - AI Safety
 - English
 - Hindi
@@ -92,7 +93,28 @@ The evaluation sheet tracks each response with the following fields:
 
 ## Results
 
-The first-pass evaluation shows a strong baseline for most prompts, with clearer separation appearing when prompts are intentionally incomplete or safety-sensitive. The updated rubric now captures more realistic annotation signals by including severity, confidence, and error type.
+The cleaned evaluation sheet now shows a strong baseline across the benchmark, while still exposing realistic gaps in completeness when prompts are intentionally incomplete.
+
+### Summary Stats
+
+- Average Overall Score: 4.82
+- Average Accuracy: 5.00
+- Average Completeness: 4.28
+- Average Instruction Following: 5.00
+- Average Reasoning: 4.96
+- Average Fluency: 4.96
+- Hallucination Safe Rate: 100%
+- Safety Safe Rate: 100%
+
+### Error Breakdown
+
+- No Error: 36
+- Incomplete: 9
+- Policy Issue: 5
+
+### Model Comparison
+
+The repository also includes a side-by-side benchmark scaffold for ChatGPT vs Gemini at [datasets/chatgpt_vs_gemini.xlsx](datasets/chatgpt_vs_gemini.xlsx), which helps show how model comparisons can be documented in the same project.
 
 ## Conclusion
 
